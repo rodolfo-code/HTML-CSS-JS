@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #F6F9FF;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #434343;
+
+  font-size: 16px;
+}
+
+main.cards {
+  display: flex;
+  padding: 32px;
+  
+}
+
+section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: whitesmoke;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 256px;
+  margin-left: 32px;
+}
+
+section.card:first-child {
+  margin-left: 0;
+}
+
+main.cards section.card .icon {
+  width: 64px;
+  height: 64px;
+}
+
+main.cards section.card img {
+  width: 100%;
+}
+
+main.cards section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+.card button {
+  background-color: rgb(231, 229, 229);
+  border: 0;
+  border-radius: 32px;
+  color: white;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+}
+
+section.contact button {
+  background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+
+section.shop button {
+  background: linear-gradient(to right, #3e8aff, #bbdeff);
+
+}
+
+section.about button {
+  background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+
+main section.contact {
+  box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+
+main section.shop {
+  box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+
+main section.about {
+  box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+
+@media screen and (max-width: 720px) {
+  main.cards {
+    margin-top: 30vh;
+    /* padding-top: 32px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  section.card:last-child {
+    margin-bottom: 0;
+  }
+}
