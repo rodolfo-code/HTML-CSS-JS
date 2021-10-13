@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(228, 228, 228);
+}
+
+.container {
+  position: relative;
+  left: 20px;
+  margin-top: 20vh;
+  width: 400px;
+  height: 400px;
+  background: blue;
+}
+
+.box {
+  position: absolute;
+  left: 45px;
+  width: 200px;
+  height: 200px;
+  background: greenyellow;
+}
